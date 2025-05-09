@@ -1,5 +1,8 @@
 import './App.css'
 import CatFact from "./CatFact.jsx";
+import doge from '/doge.jpg'
+import cat from '/cat.jpeg'
+import { useState } from 'react'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,10 +11,10 @@ function App() {
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
-          <img src="/doge.jpg" className="logo" alt="Vite logo" />
+          <img src={doge} className="logo" alt="doge logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src="/cat.jpeg" className="logo react" alt="React logo" />
+          <img src={cat} className="logo react" alt="cat logo" />
         </a>
       </div>
       <h1 style={{color:'black'}}>Doge + Cat</h1>
