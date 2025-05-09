@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import CatFact from "./CatFact.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,10 +24,11 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs" style={{ color: '006A71' }}>
-        Click on the Doge and Cat logos to learn more
+        <CatFact/>
       </p>
     </>
   )
 }
+
 
 export default App
